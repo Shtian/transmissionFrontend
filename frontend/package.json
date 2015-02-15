@@ -55,5 +55,9 @@
       "bootstrap": "^3.3.1",
       "font-awesome": "^4.3.0"
     }
+  },
+  "dependencies": {
+    "require": "^2.4.17",
+    "firebase": "^2.2.0"
   }
 }
