@@ -14,7 +14,7 @@ export class Home{
         item.totalSize = Math.floor(item.totalSize / 1000000);
         item.addedDate = moment(item.addedDate, "X").fromNow();
         return item;
-      })
+      });
     });
   }
 }
