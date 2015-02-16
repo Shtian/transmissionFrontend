@@ -58,6 +58,8 @@
   },
   "dependencies": {
     "require": "^2.4.17",
-    "firebase": "^2.2.0"
+    "firebase": "^2.2.0",
+    "lodash": "^3.2.0",
+    "moment": "^2.9.0"
   }
 }

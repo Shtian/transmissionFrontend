@@ -9,6 +9,12 @@ export class Home{
     var that = this;
     this.torrentsRef.on('value', function(data){
       that.torrents = data.val();
+      // Normalize values
+      that.torrents = _.map(that.torrents, function(item){
+        item.totalSize = Math.floor(item.totalSize / 1000000);
+        item.addedDate = moment(item.addedDate, "X").fromNow();
+        return item;
+      })
     });
   }
 }

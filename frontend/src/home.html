@@ -1,9 +1,11 @@
 <template>
   <section>
-    <ul>
-      <li repeat.for="torrent of torrents">
-           ${torrent.name}, ${torrent.totalSize / 1000000} mb, Added: ${torrent.addedDate}
-      </li>
-    </ul>
+    <div class="row">
+      <ul class="list-group">
+        <li repeat.for="torrent of torrents" class="list-group-item ${torrent.isFinished ? 'list-group-item-success' : ''}">
+          <strong>${torrent.name}</strong> ${torrent.totalSize} mb<span class="pull-right">${torrent.addedDate}</span>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>

@@ -5,7 +5,7 @@ export class App {
   constructor(router) {
     this.router = router;
     this.router.configure(config => {
-      config.title = 'Aurelia';
+      config.title = 'Torrent History';
       config.map([
         { route: ['','home'], moduleId: 'home', nav: true, title:'Home' }
       ]);
